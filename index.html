@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>HEF Inc. - Home.</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png">
+
+    <style>
+
+         img {
+          max-width: 100%;
+          height: auto;
+          display: block;
+        }
+        .logo {
+        display: block;           
+        margin: 0 auto;          
+        width: 150px;            
+        height: auto; 
+        
+        }
+
+
+        .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.6);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+
+      .popup-content {
+        background: #fff;
+        padding: 30px;
+        width: 90%;
+        max-width: 400px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      }
+
+      .popup-content h2 {
+        margin-bottom: 10px;
+      }
+
+      .popup-content p {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 20px;
+      }
+
+      .fb-buttons a {
+        display: block;
+        margin: 8px 0;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 6px;
+        border: 1px solid #ff7a00;
+        color: #d66c09;
+        transition: 0.3s;
+      }
+
+      .fb-buttons a:hover {
+        background: #ff7a00;
+        color: #fff;
+      }
+
+      .continue-btn {
+        margin-top: 15px;
+        padding: 8px 15px;
+        border: none;
+        background: #eee;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      /* Stats */
+.stats-section {
+  margin: 80px 0;
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.stat-box {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+}
+
+.stat-box h3 {
+  font-size: 32px;
+  color: #f35525;
+  margin-bottom: 10px;
+}
+
+.stat-box p {
+  font-size: 14px;
+  color: #555;
+}
+
+.cta-section {
+  background: #fff; /* remove orange background */
+  padding: 80px 20px;
+}
+
+.cta-section h2 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.cta-section p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* BUTTON */
+.cta-btn {
+  display: inline-block;
+  background: #f35525;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #d94a1f;
+  color: #fff;
+}
+
+    </style>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/hef-site.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+  </head>
+
+<body>
+
+<div id="fbPopup" class="popup-overlay">
+  <div class="popup-content">
+
+    <h2>Stay Connected With Us</h2>
+    <p>Visit our official Facebook pages to explore our latest listings, updates, and offers.</p>
+
+    <div class="fb-buttons">
+
+      <a href="https://www.facebook.com/DMDC.RentToOwn" target="_blank">
+        DMDC - Rent To Own
+      </a>
+
+      <a href="https://www.facebook.com/Pinasinvest" target="_blank">
+        Rent To Own Philippines
+      </a>
+
+      <a href="https://www.facebook.com/Renttoownpagibighouse" target="_blank">
+        Rent To Own House
+      </a>
+
+      <a href="https://www.facebook.com/myrent2ownhouse" target="_blank">
+        My Rent To Own House
+      </a>
+
+      <a href="https://www.facebook.com/BahayNiJuanHousePH" target="_blank">
+        Bahay ni Juan
+      </a>
+
+    </div>
+
+    <button class="continue-btn" onclick="closePopup()">
+      Continue Browsing
+    </button>
+
+  </div>
+</div>
+
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+<!--Header Above-->
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8">
+          <ul class="info">
+            <li><i class="fa fa-house"></i>Real Estate</li>
+            <li><i class="fa fa-map"></i>Alabang-Zapote Road, Las Piñas City</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <ul class="social-links">
+            <li><a href="contact/index.html" target="_blank" ><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.tiktok.com/@dmdc_renttoown" target="_blank" ><i class="fab fa-tiktok"></i></a></li>
+            <li><a href="https://www.instagram.com/dmdcprimehomes" target="_blank" ><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.jpg" alt="company logo" class="logo">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li><a href="index.html" class="active">Home</a></li>
+                      <li><a href="properties/index.html">Properties</a></li>
+                      <li><a href="about/index.html" >About</a></li>
+                      <li><a href="contact/index.html">Contact Us</a></li>
+                      
+                      <li>
+                      <a href="#" onclick="openPopup()"><i class="fa fa-calendar"></i> Visit Our Page</a>
+                      </li>
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner">
+    <div class="owl-carousel owl-banner">
+      <div class="item item-1">
+        <div class="header-text">
+          <span class="category">Las Piñas, <em>Metro Manila</em></span>
+          <h2>Magka-BAHAY Every JUAN<br>Your Dream Home Starts Here</h2>
+        </div>
+      </div>
+      <div class="item item-2">
+        <div class="header-text">
+          <span class="category">NAIC, <em>Cavite</em></span>
+          <h2>Affordable Homes Within Reach<br>Para sa Pamilyang Pilipino</h2>
+        </div>
+      </div>
+      <div class="item item-3">
+        <div class="header-text">
+          <span class="category">Tanza, <em>Cavite</em></span>
+          <h2>From Reservation to Turnover<br>We Guide You Every Step</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Why choose us-->
+  <div class="section">
+  <div class="container text-center">
+
+    <div class="section-heading">
+      <h6>| Why Choose Us</h6>
+      <h2>Why Home Expert Finders Realty?</h2>
+    </div>
+
+    <div class="row mt-4">
+
+      <div class="col-md-4">
+        <div class="stat-box">
+          <i class="fa fa-home" style="font-size:30px; color:#f35525;"></i>
+          <h5>Affordable Homes</h5>
+          <p>We offer budget-friendly properties perfect for Filipino families.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="stat-box">
+          <i class="fa fa-handshake" style="font-size:30px; color:#f35525;"></i>
+          <h5>Trusted Service</h5>
+          <p>Transparent process from reservation to turnover.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="stat-box">
+          <i class="fa fa-users" style="font-size:30px; color:#f35525;"></i>
+          <h5>Client Support</h5>
+          <p>We guide you every step of the way.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--Featured Us-->
+<div class="featured section">
+    <div class="container">
+      <div class="row">
+
+ <!-- LEFT: IMAGE -->
+      <div class="col-lg-5">
+        <div class="featured-image-wrapper">
+
+          <img id="featuredImg" src="featured_images/f2.jpg" alt="Featured Property">
+
+        </div>
+      </div>
+
+      <!-- RIGHT: TEXT + ACCORDION -->
+      <div class="col-lg-7">
+
+        <div class="section-heading">
+          <h6>| Featured</h6>
+          <h2>Find Your Perfect Home with HEF</h2>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+          
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                What is HEF?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>HEF</strong> stands for Home Expert Finders. We are a real estate company based in Las Piñas.
+              </div>
+            </div>
+          </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              What is the most recommended property?
+            </button>
+          </h2>
+
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              We highly recommend <strong>Astrid Model</strong> because of its modern townhouse design, accessible location in Tanza, Cavite, and affordable pricing perfect for starting families and long-term investment.
+            </div>
+          </div>
+        </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                How long is the process?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                The process is fast and simple, requiring only document signing and basic requirements.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--Properties-->
+<div class="section">
+  <div class="container">
+
+    <div class="section-heading text-center">
+      <h6>| Properties</h6>
+      <h2>Explore Our Latest Homes</h2>
+    </div>
+
+    <div class="row" id="featured-properties"></div>
+
+  </div>
+</div>
+
+<!--Testimonials-->
+<div class="section" style="background:#f9f9f9;">
+  <div class="container text-center">
+
+    <div class="section-heading">
+      <h6>| Testimonials</h6>
+      <h2>What Our Clients Say</h2>
+    </div>
+
+    <div class="row mt-4">
+
+      <div class="col-md-4">
+        <div class="stat-box">
+          <p>"Napakadali ng process! Thank you HEF!"</p>
+          <h6>- Maria S.</h6>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="stat-box">
+          <p>"Very accommodating and professional agents."</p>
+          <h6>- Dominador M.</h6>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="stat-box">
+          <p>"Finally got our dream home!"</p>
+          <h6>- The Cruz Family</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Video Section-->
+<div class="video section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3 text-center">
+        <div class="section-heading">
+          <h6>| Featured Property Video</h6>
+          <h2>Most Affordable & Recommended Home</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VIDEO CONTENT (IMPORTANT: uses your CSS structure) -->
+<div class="video-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+
+        <div class="video-frame">
+
+          <iframe 
+            width="100%" 
+            height="500"
+            src="https://www.youtube.com/embed/2jR5li08wa0"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="stats-section">
+  <div class="container">
+    <div class="row text-center">
+
+      <div class="col-md-4">
+        <div class="stat-box">
+          <h3>30+</h3>
+          <p>Years of Experience</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="stat-box">
+          <h3>1000+</h3>
+          <p>Homes Delivered</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="stat-box">
+          <h3>100%</h3>
+          <p>Client Commitment</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="cta-section">
+  <div class="container text-center">
+
+    <h2>Ready to Own Your Dream Home?</h2>
+    <p>Let us help you find the perfect property today.</p>
+
+    <a href="contact/index.html" class="cta-btn">Contact Us Now</a>
+
+  </div>
+</div>
+
+  <footer>
+    <div class="container">
+      <div class="col-lg-12">
+        <p>Copyright © 2026 Home Expert Finders Inc. All rights reserved. 
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+    function openPopup() {
+  document.getElementById("fbPopup").style.display = "flex";
+}
+
+function closePopup() {
+  document.getElementById("fbPopup").style.display = "none";
+}
+
+
+  const images = [
+    "featured_images/f1.jpg",
+    "featured_images/f3.jpg",
+    "featured_images/f4.jpg",
+    "featured_images/f5.jpg",
+    "featured_images/f6.jpg",
+    "featured_images/f7.jpg",
+    "featured_images/f8.jpg",
+    "featured_images/f9.jpg",
+    "featured_images/f10.jpg",
+  ];
+
+  let index = 0;
+  const imgElement = document.getElementById("featuredImg");
+
+  setInterval(() => {
+    index = (index + 1) % images.length;
+    imgElement.src = images[index];
+  }, 6000); // change every 16 seconds
+
+  </script>
+
+  <script>
+const properties = [
+
+  {
+    name: "Amanda",
+    price: "₱5,078,000",
+    image: "property-details/property5/amanda13.jpg",
+    link: "property-details/property5/index.html"
+  },
+
+  {
+    name: "Astrid",
+    price: "₱4,380,000",
+    image: "property-details/property1/astrid10.jpg",
+    link: "property-details/property1/index.html"
+  },
+
+  {
+    name: "Cypress",
+    price: "₱8,500,000",
+    image: "property-details/property14/cypress3.jpg",
+    link: "property-details/property14/index.html"
+  },
+
+  {
+    name: "Dahlia",
+    price: "₱1,910,000",
+    image: "property-details/property2/dahlia1.jpg",
+    link: "property-details/property2/index.html"
+  },
+
+  {
+    name: "Danna",
+    price: "₱1,460,000",
+    image: "property-details/property3/danna8.jpg",
+    link: "property-details/property3/index.html"
+  },
+
+  {
+    name: "Danna Single Attached",
+    price: "₱6,098,780",
+    image: "property-details/property15/dannaSA3.jpg",
+    link: "property-details/property15/index.html"
+  },
+
+  {
+    name: "Diana",
+    price: "₱1,920,000",
+    image: "property-details/property4/diana8.jpg",
+    link: "property-details/property4/index.html"
+  },
+
+  {
+    name: "Era",
+    price: "₱6,888,120",
+    image: "property-details/property16/era8.jpg",
+    link: "property-details/property16/index.html"
+  },
+
+  {
+    name: "Gabby Inner",
+    price: "₱2,590,500",
+    image: "property-details/property17/gabby8.jpg",
+    link: "property-details/property17/index.html"
+  },
+
+  {
+    name: "Green Lane",
+    price: "₱4,300,000",
+    image: "property-details/property12/gl1.jpg",
+    link: "property-details/property12/index.html"
+  },
+
+  {
+    name: "Kathleen Place 5",
+    price: "₱6,205,398",
+    image: "property-details/property10/kath23.jpg",
+    link: "property-details/property10/index.html"
+  },
+
+  {
+    name: "Liora",
+    price: "₱2,408,400",
+    image: "property-details/property7/liora4.jpg",
+    link: "property-details/property7/index.html"
+  },
+
+  {
+    name: "Mia",
+    price: "₱4,280,000",
+    image: "property-details/property11/mia2.jpg",
+    link: "property-details/property11/index.html"
+  },
+
+  {
+    name: "Parker",
+    price: "₱4,150,000",
+    image: "property-details/property8/parker4.jpg",
+    link: "property-details/property8/index.html"
+  },
+
+  {
+    name: "Sionil",
+    price: "₱7,445,000",
+    image: "property-details/property13/sionil1.jpg",
+    link: "property-details/property13/index.html"
+  },
+
+  {
+    name: "Valenzia",
+    price: "₱4,032,000",
+    image: "property-details/property18/valenzia1.jpg",
+    link: "property-details/property18/index.html"
+  },
+
+  {
+    name: "Zelia @ Las Brisas",
+    price: "₱5,083,526",
+    image: "property-details/property9/zelia6.jpg",
+    link: "property-details/property9/index.html"
+  }
+
+];
+
+  // Shuffle array
+  properties.sort(() => 0.5 - Math.random());
+
+  // Get first 3
+  const featured = properties.slice(0, 3);
+
+  let output = "";
+
+  featured.forEach(property => {
+
+    output += `
+      <div class="col-md-4">
+        <div class="stat-box">
+
+          <img src="${property.image}" 
+               style="border-radius:10px; width:100%; height:250px; object-fit:cover;">
+
+          <h5 class="mt-3">${property.name}</h5>
+
+          <p>Price: ${property.price}</p>
+
+          <a href="${property.link}" 
+             class="btn btn-sm"
+             style="background:#f35525; color:#fff;">
+
+             View Details
+
+          </a>
+
+        </div>
+      </div>
+    `;
+  });
+
+  document.getElementById("featured-properties").innerHTML = output;
+</script>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding-top: 140px; /* space for sub-header + navbar */
+  position: relative;
+}
+
+/* ===== SUB HEADER (TOP PART) ===== */
+.sub-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  background-color: #fff;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* HIDE SUB-HEADER ON SCROLL */
+.header-area.background-header ~ .sub-header {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+/* ===== NAVBAR ===== */
+.header-area {
+  position: fixed !important;
+  top: 40px; /* height of sub-header */
+  left: 0;
+  width: 100%;
+  background-color: #fff !important;
+  z-index: 100000 !important;
+  transition: all 0.3s ease;
+  backdrop-filter: none !important;
+}
+
+/* WHEN SCROLLED */
+.header-area.background-header {
+  top: 0 !important; /* moves up when sub-header hides */
+  background-color: #fff !important;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  opacity: 1 !important;
+}
+
+/* ===== GALLERY ===== */
+.gallery {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+.gallery .img-c {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+}
+.gallery .img-c img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.gallery .img-c:hover img {
+  transform: scale(1.08);
+}
+
+/* ===== LIGHTBOX ===== */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.lightbox.active {
+  display: flex;
+}
+
+/* CLOSE ANIMATION */
+.img-c.postactive {
+  pointer-events: none;
+}
+
+/* LOCK SCROLL */
+body.gallery-open {
+  overflow: hidden;
+}
+
+/* KEEP CONTENT BELOW NAV */
+.page-heading,
+.single-property,
+.best-deal,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+/*# sourceMappingURL=image-gallery.css.map */

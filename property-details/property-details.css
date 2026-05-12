@@ -1,0 +1,226 @@
+        .logo {
+        display: block;           
+        margin: 0 auto;          
+        width: 150px;            
+        height: auto;          
+    }
+        .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.6);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+
+      .popup-content {
+        background: #fff;
+        padding: 30px;
+        width: 90%;
+        max-width: 400px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      }
+
+      .popup-content h2 {
+        margin-bottom: 10px;
+      }
+
+      .popup-content p {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 20px;
+      }
+
+      .fb-buttons a {
+        display: block;
+        margin: 8px 0;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 6px;
+        border: 1px solid #ff7a00;
+        color: #ff7a00;
+        transition: 0.3s;
+      }
+
+      .fb-buttons a:hover {
+        background: #ff7a00;
+        color: #fff;
+      }
+
+      .continue-btn {
+        margin-top: 15px;
+        padding: 8px 15px;
+        border: none;
+        background: #eee;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+/* =========================
+   PROPERTY DETAILS CARD
+========================= */
+
+.main-content {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.main-content .category {
+  font-size: 13px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.main-content h4 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 5px;
+  color: #1e1e1e;
+}
+
+.main-content p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* =========================
+   PROPERTY DETAILS BOX
+========================= */
+
+.property-details {
+  background: #f9f9f9;
+  padding: 18px;
+  border-radius: 10px;
+  margin-top: 15px;
+  border-left: 4px solid #f35525;
+}
+
+.property-details p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.property-details strong {
+  color: #111;
+}
+
+.property-details ul {
+  margin-top: 12px;
+  padding-left: 18px;
+}
+
+.property-details li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+.main-content h5 {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e1e1e;
+}
+
+/* =========================
+   LANDMARKS SECTION
+========================= */
+
+.landmarks {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.landmarks li {
+  background: #fff;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  font-size: 14px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s ease;
+}
+
+.landmarks li:hover {
+  transform: translateX(5px);
+  background: #f8f8f8;
+}
+
+.landmarks i {
+  color: #f35525;
+  font-size: 16px;
+}
+
+/* =========================
+   RESPONSIVE FIX
+========================= */
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 18px;
+  }
+
+  .main-content h4 {
+    font-size: 22px;
+  }
+}
+    .main-image {
+      display: flex;
+      justify-content: center;
+    }
+
+    .gallery {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .video-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    .video-container {
+      width: 100%;
+      max-width: 900px;
+      position: relative;
+      padding-top: 56.25%;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-weight: 600;
+    }
